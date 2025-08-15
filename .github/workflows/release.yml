@@ -26,9 +26,9 @@ jobs:
         with:
           python-version-file: "pyproject.toml"
 
-      # - name: Run tests
-      #   # For example, using `pytest`
-      #   run: uv run pytest tests
+      - name: Run tests
+        # For example, using `pytest`
+        run: uv run pytest tests
 
   build-and-release:
     name: Generate Changelog, build, and release
