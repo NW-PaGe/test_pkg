@@ -1,4 +1,13 @@
-# 0.1.0 (2025-08-15)
+## [0.1.1](https://github.com/NW-PaGe/test_pkg/compare/v0.1.0...v0.1.1) (2025-08-15)
+
+
+### Bug Fixes
+
+* remove comment ([f7a248b](https://github.com/NW-PaGe/test_pkg/commit/f7a248b54792ff24102d5ced0ba538bbca8934d9))
+
+
+
+# [0.1.0](https://github.com/NW-PaGe/test_pkg/compare/82fd4d62fc3bfe48c63d910c148951500dbfb249...v0.1.0) (2025-08-15)
 
 
 ### Bug Fixes
