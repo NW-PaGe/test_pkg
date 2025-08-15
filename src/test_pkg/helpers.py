@@ -10,7 +10,7 @@ def date_format(col: str,output_date_name = "output_date_name"):
     For example, it will first try to convert m/d/y, and then if that doesn't work it will try d/m/y.
     It's not perfect, but if someone messes up the date it's their fault.
     
-    **Note: it won't attempt to convert excel dates. If someone sends us excel dates we will file a lawsuit.**
+    **Note: it won't attempt to convert excel dates**
 
     Usage
     -----
