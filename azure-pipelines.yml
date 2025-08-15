@@ -1,0 +1,30 @@
+# Python package
+# Create and test a Python package on multiple Python versions.
+# Add steps that analyze code, save the dist with the build record, publish to a PyPI-compatible index, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/python
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: AzureKeyVault@2
+  name: FetchSecrets
+  inputs:
+    azureSubscription: $(AZURESUBSCRIPTION)
+    KeyVaultName: $(KEYVAULTNAME)
+    SecretsFilter: 'PACKAGEMANAGER-TOKEN,PACKAGEMANAGER-ADDRESS'
+    RunAsPreJob: true
+
+- script: |
+    curl -o rspm -f https://cdn.posit.co/package-manager/linux/amd64/rspm-cli-linux-2025.04.0-4
+    chmod +x rspm
+    mkdir -p ~/.local/bin
+    mv rspm ~/.local/bin/
+    rspm create git-builder -v --source=internal-python-src --url=https://github.com/NW-PaGe/test_pkg.git --name=test_nw_page_pkg
+  env:
+    PACKAGEMANAGER_TOKEN: $(PACKAGEMANAGER_TOKEN)
+    PACKAGEMANAGER_ADDRESS: $(PACKAGEMANAGER_ADDRESS)
+  displayName: 'Install rspm'
