@@ -1,3 +1,14 @@
+## [0.1.2](https://github.com/NW-PaGe/test_pkg/compare/v0.1.1...v0.1.2) (2025-08-15)
+
+
+### Bug Fixes
+
+* force it ([c9e45f0](https://github.com/NW-PaGe/test_pkg/commit/c9e45f05d84eb701b96a8f92d0f1b13b75d4e2a1))
+* force it ([9d246d1](https://github.com/NW-PaGe/test_pkg/commit/9d246d180b8abc7012d81d6b53201491363892e4))
+* see if this works ([d790b7c](https://github.com/NW-PaGe/test_pkg/commit/d790b7c3c93dff117ea93c1f05e1944f5b7d52c2))
+
+
+
 ## [0.1.1](https://github.com/NW-PaGe/test_pkg/compare/v0.1.0...v0.1.1) (2025-08-15)
 
 
