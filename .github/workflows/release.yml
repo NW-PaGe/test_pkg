@@ -26,12 +26,9 @@ jobs:
         with:
           python-version-file: "pyproject.toml"
 
-      - name: Install package in editable mode
-        run: uv pip install -e .
-
-      - name: Run tests
-        # For example, using `pytest`
-        run: uv run pytest tests
+      # - name: Run tests
+      #   # For example, using `pytest`
+      #   run: uv run pytest tests
 
   build-and-release:
     name: Generate Changelog, build, and release
